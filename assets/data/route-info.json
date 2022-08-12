@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "route": "Route 1",
+        "routepoint": "Tilagor, Baluchar, TB gate, Eidgah, Electric supply, Amberkhana, Dorshondewry, Subidbazar, Londony road, Pathantula, Modina Market"
+    },
+    {
+        "id": 2,
+        "route": "Route 2",
+        "routepoint": "Tilagor, Baluchar, TB gate, Eidgah, Electric supply, Amberkhana, Dorshondewry, Subidbazar, Londony road, Pathantula, Modina Market"
+    },
+    {
+        "id": 3,
+        "route": "Route 3",
+        "routepoint": "Tilagor, Baluchar, TB gate, Eidgah, Electric supply, Amberkhana, Dorshondewry, Subidbazar, Londony road, Pathantula, Modina Market"
+    },
+    {
+        "id": 4,
+        "route": "Route 4",
+        "routepoint": "Tilagor, Baluchar, TB gate, Eidgah, Electric supply, Amberkhana, Dorshondewry, Subidbazar, Londony road, Pathantula, Modina Market"
+    }
+]

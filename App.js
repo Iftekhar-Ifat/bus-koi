@@ -27,8 +27,8 @@ export default function App() {
     return (
         <TailwindProvider>
             <SafeAreaView style={styles.container} className={"bg-inherit"}>
-                <Login />
-                {/* <Home /> */}
+                {/* <Login /> */}
+                <Home />
             </SafeAreaView>
         </TailwindProvider>
     );
