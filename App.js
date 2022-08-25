@@ -9,10 +9,14 @@ import {
     Poppins_700Bold,
     Poppins_800ExtraBold,
 } from "@expo-google-fonts/poppins";
+import LoginScreen from "./src/screens/LoginScreen";
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from "./src/screens/Home";
 import Login from "./src/screens/Login";
 
+const Stack = createNativeStackNavigator();
 export default function App() {
     const [fontsLoaded, error] = useFonts({
         Poppins_400Regular,
@@ -28,7 +32,13 @@ export default function App() {
         <TailwindProvider>
             <SafeAreaView style={styles.container} className={"bg-inherit"}>
                 {/* <Login /> */}
-                <Home />
+                {/* <Home /> */}
+
+                <NavigationContainer>
+                    <Stack.Navigator>
+                        <Stack.Screen options={{ headerShown: false }} name="Login" component={LoginScreen} />
+                    </Stack.Navigator>
+                </NavigationContainer>
             </SafeAreaView>
         </TailwindProvider>
     );
