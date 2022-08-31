@@ -33,7 +33,7 @@ export default function App() {
         <TailwindProvider>
             <SafeAreaView style={styles.container} className={"bg-inherit"}>
                 {/* <Login /> */}
-                {/* <Home /> */}
+                <Home />
 
                 {/* <NavigationContainer>
                     <Stack.Navigator>
@@ -44,7 +44,7 @@ export default function App() {
                         />
                     </Stack.Navigator>
                 </NavigationContainer> */}
-                <MapScreen />
+                {/* <MapScreen /> */}
             </SafeAreaView>
         </TailwindProvider>
     );

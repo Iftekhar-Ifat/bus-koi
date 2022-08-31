@@ -1,7 +1,14 @@
-import { StyleSheet, Pressable, Text, View } from "react-native";
+import { StyleSheet, Pressable, Text, View, Alert } from "react-native";
 import { SvgUri } from "react-native-svg";
 import RouteContainer from "../components/HomeComponents/RouteContainer";
+import { firebaseDatabse } from "../lib/firebase";
+
 const Home = () => {
+    const getLocation = (userId) => {
+        firebaseDatabse.ref('users/').set({
+            name: "ifat"
+        })
+    }
     return (
         <View style={{ flex: 1 }}>
             <View
@@ -26,8 +33,9 @@ const Home = () => {
                     Share your location and help others track the bus!
                 </Text>
                 <Pressable
-                    title="Get Started"
+                    title="Share Now"
                     className="flex items-center h-12 rounded justify-center bg-background-blue text-white w-32 active:bg-sky-500 active:transition duration-150 ease-in-out"
+                    onPress={() => {getLocation("ifat")}}
                 >
                     <Text
                         className="text-white text-lg font-semibold tracking-wide"
